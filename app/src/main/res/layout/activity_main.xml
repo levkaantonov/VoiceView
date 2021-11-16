@@ -6,13 +6,36 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+    <levkaantonov.com.study.voiceview.VoiceView
+        android:id="@+id/voiceView1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:itemWidth="10dp"
+        app:itemColor="#C2185B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <levkaantonov.com.study.voiceview.VoiceView
+        android:id="@+id/voiceView2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        app:itemWidth="1dp"
+        android:background="#ddf3c2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voiceView1" />
+
+    <levkaantonov.com.study.voiceview.VoiceView
+        android:id="@+id/voiceView3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="#ddf3c2"
+        app:itemColor="#0288D1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/voiceView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
